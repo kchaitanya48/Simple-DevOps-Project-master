@@ -16,15 +16,17 @@
    ```
  2.1. verify how many user are in docker unix box
        cat /etc/passwd
+        ```
  2.2   verify existing groups in unix box
        cat /etc/group
+        ```
  2.3. Create a user called dockeradmin
    useradd dockeradmin
    passwd dockeradmin
-   
+    ```
   2.4. add a user to docker group to manage docker 
       usermod -aG docker dockeradmin
-  
+   ```
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
    ```sh
